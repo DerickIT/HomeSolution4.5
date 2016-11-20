@@ -13,8 +13,10 @@ namespace ConsoleITCast.Net基础
            Disk.read();
        }
        public void write()
-       { 
-       
-       Disk.write()}
+       {
+
+           Disk.write();
+       }
+      
     }
 }

@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include=".Net基础\computer.cs" />
+    <Compile Include=".Net基础\mp3.cs" />
+    <Compile Include=".Net基础\neicun.cs" />
+    <Compile Include=".Net基础\upan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
