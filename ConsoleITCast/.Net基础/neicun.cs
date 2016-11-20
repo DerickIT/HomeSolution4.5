@@ -8,6 +8,7 @@ namespace ConsoleITCast.Net基础
 {
     public abstract class neicun
     {
-
+        public abstract void read();
+        public abstract void write();
     }
 }
