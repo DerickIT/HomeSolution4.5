@@ -1,6 +1,6 @@
 ﻿静态类中可以有无参构造函数，不支持有残构造函数
 
-通过virtual，abstrac，interface来实现多态
+通过virtual，abstract，interface来实现多态
 抽象方法不能有任何实现，必须包含在抽象类中
 
 sealed密封类，类不能被继承，标记里面的方法不能重写
