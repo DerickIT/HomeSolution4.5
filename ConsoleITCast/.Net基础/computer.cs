@@ -12,9 +12,13 @@ namespace ConsoleITCast.Net基础
        public void read() {
            Disk.read();
        }
+       public override string ToString()
+       {
+           return base.ToString();
+       }
        public void write()
        {
-
+           
            Disk.write();
        }
       
