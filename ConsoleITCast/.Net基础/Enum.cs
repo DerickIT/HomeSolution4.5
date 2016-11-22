@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleITCast.Net基础
 {
-    public enum states
+    /// <summary>
+    /// 限制枚举中的类型只能是byte类型
+    /// </summary>
+    public enum states : byte
     {
         在线,
         离线,
