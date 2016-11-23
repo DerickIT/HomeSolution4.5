@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 namespace ConsoleITCast.Net基础
 {
     /// <summary>
-    /// 限制枚举中的类型只能是byte类型
+    /// 结构可以实例化
     /// </summary>
-    [Flags]
-    public enum states : byte
+    public struct structs
     {
-        在线,
-        离线,
-        隐身
     }
 }
