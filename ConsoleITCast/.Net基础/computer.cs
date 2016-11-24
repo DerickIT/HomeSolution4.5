@@ -25,7 +25,7 @@ namespace ConsoleITCast.Net基础
            catch (NullReferenceException e)
            {
                //只能处理空引用异常
-               throw e;
+               throw e.InnerException;
            }
            Disk.write();
        }
