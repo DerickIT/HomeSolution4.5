@@ -15,7 +15,7 @@ namespace ConsoleITCast
             com.Disk = new mp3();
             com.read();
             var m3 = new mp3();
-            m3.player();
+           m3.player();
            
         }
     }
