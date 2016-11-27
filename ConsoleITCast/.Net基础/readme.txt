@@ -83,5 +83,5 @@ string s=null;表示s变量没有指向任何堆内存
 string s="",表示指向了一个堆内存，但是内存中存储的是一个空字符串，两个相同引用类型的变量在一个引用的字符串池中
 string.empty()==public static readonly string empty,，每次就不需要在开辟新内存，直接调用的是这个
 字符串长度为0，就表示字符串为空
-字符串拼接，翻转
+字符串拼接，翻转，分割，split
 
