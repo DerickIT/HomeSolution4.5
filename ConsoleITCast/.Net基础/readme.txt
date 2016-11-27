@@ -88,4 +88,13 @@ string.empty()==public static readonly string empty,，每次就不需要在开�
 使用即时窗口，&变量名,ctrl+d+i
 equals被子类重写，string比较的是值，而不是堆中的引用位置，可以使用object.ReferenceEquals()，判断对象是否相等
 值类型比较的是类型，然后再是值
-
+垃圾回收目的：提高内存利用率，只回收托管堆中的内存成员，不回收其他资源（数据库连接，文件，网络端口）
+什么对象会回收：没有变量引用的对象，层级回收
+。net垃圾回收机制：标志和压缩
+Dsipose释放除内存外的其他资源，比析构函数要好
+~class(){}  析构函数和类名一致~，释放资源，当前对象被垃圾回收之前调用Finalize（），释放其他资源
+WeakReference弱引用，（当需要回收后还想调用的变量）一般用在创建时比较耗时的对象，还可以用
+创建一个变量，当经常用到，可以标注为若引用，标注之后用还可以用，不用就会被gc回收
+——————————————————————————————————————————
+arraylist用list替换，hashtable用dictionary替代
+容量 arrarlist.capacity(),list是翻倍增长，array是被动增长
