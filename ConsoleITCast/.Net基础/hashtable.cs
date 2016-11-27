@@ -22,6 +22,11 @@ namespace ConsoleITCast.Net基础
         public void sd()
         {
             a.Add(1);
+            while (a.Contains("a"))
+            {
+                var dic = new Dictionary<string, int>();
+                dic.Add("zhn", 7);//使用字典dictionary
+            }
         }
     }
 }
