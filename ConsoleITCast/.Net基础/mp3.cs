@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleITCast.Net基础
 {
-   public class mp3:neicun
+    public class mp3 : neicun
     {
         public override void read()
         {
@@ -18,6 +19,11 @@ namespace ConsoleITCast.Net基础
             Console.WriteLine("mp3实现内存的写方法");
         }
         public void player()
-        { Console.WriteLine("实现自己的播放方法"); }
+        {
+            Stopwatch starttime = new Stopwatch();
+            starttime.Start();
+            Console.WriteLine("实现自己的播放方法");
+            starttime.Stop();//结束计时
+        }
     }
 }
