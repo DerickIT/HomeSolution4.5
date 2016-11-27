@@ -3,3 +3,4 @@ E:\DEMO.NET\HomeSolution4.5\ConsoleITCast\bin\Debug\ConsoleITCast.exe
 E:\DEMO.NET\HomeSolution4.5\ConsoleITCast\bin\Debug\ConsoleITCast.pdb
 E:\DEMO.NET\HomeSolution4.5\ConsoleITCast\obj\Debug\ConsoleITCast.exe
 E:\DEMO.NET\HomeSolution4.5\ConsoleITCast\obj\Debug\ConsoleITCast.pdb
+E:\DEMO.NET\HomeSolution4.5\ConsoleITCast\obj\Debug\ConsoleITCast.csprojResolveAssemblyReference.cache

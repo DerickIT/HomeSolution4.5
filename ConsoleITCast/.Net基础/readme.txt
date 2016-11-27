@@ -100,3 +100,5 @@ arraylist用list替换，hashtable用dictionary替代
 容量 arrarlist.capacity(),list是翻倍增长，array是被动增长
 hashtable键值对形式
 通过泛型可以限制对象的类型
+KeyValuePair键值同时遍历类型
+var类型推断，是强类型（在程序编译时已经替换成了相应的类型）

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include=".Net基础\computer.cs" />
     <Compile Include=".Net基础\Enum.cs" />
+    <Compile Include=".Net基础\hashtable.cs" />
     <Compile Include=".Net基础\index[].cs" />
     <Compile Include=".Net基础\mp3.cs" />
     <Compile Include=".Net基础\neicun.cs" />
