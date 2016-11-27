@@ -24,6 +24,9 @@ namespace ConsoleITCast.Net基础
             starttime.Start();
             Console.WriteLine("实现自己的播放方法");
             starttime.Stop();//结束计时
+            StringBuilder sb = new StringBuilder();
+            sb.Append("sd");
+            //当遇到需要很多字符拼接时，不要用string，内存浪费，性能损耗严重，每次都会创建新对象，因为字符串的不可变性
         }
     }
 }
