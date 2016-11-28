@@ -1,5 +1,6 @@
 ﻿using ConsoleITCast.Net基础;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,14 @@ namespace ConsoleITCast
             var sub = 0;
             var bo = num.Equals(sub);
             Fu();
+            //foreach其实只是做了这件事
+           //var sd= new  index__ ();
+           //IEnumerator tor = sd.GetEnumerator();
+           //while (tor.MoveNext())
+           //{
+           //    string sds = tor.Current.ToString();
+           //    Console.WriteLine(sds);
+           //}
         }
         public int add(params int[] arr)
         {

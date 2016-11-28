@@ -26,6 +26,7 @@ namespace ConsoleITCast.Net基础
             starttime.Stop();//结束计时
             StringBuilder sb = new StringBuilder();
             sb.Append("sd");
+          TimeSpan a=  starttime.Elapsed;
             //当遇到需要很多字符拼接时，不要用string，内存浪费，性能损耗严重，每次都会创建新对象，因为字符串的不可变性
             //可以再winform总使用webbrower浏览器控件来实现
         }
