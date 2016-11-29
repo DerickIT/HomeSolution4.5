@@ -47,7 +47,7 @@ namespace ConsoleITCast.Net基础
 
         object IEnumerator.Current
         {
-            get { throw new NotImplementedException(); }
+            get { return _car[Index]; }
         }
 
         public bool MoveNext()
@@ -65,6 +65,11 @@ namespace ConsoleITCast.Net基础
         public void Reset()
         {
             Index = -1;//让index索引复位
+        }
+
+        index__ IEnumerator<index__>.Current
+        {
+            get { throw new NotImplementedException(); }
         }
     }
 }

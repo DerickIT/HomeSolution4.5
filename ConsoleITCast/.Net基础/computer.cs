@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,7 @@ namespace ConsoleITCast.Net基础
            {
                //只能处理空引用异常
                throw e.InnerException;
+               Path.GetPathRoot("");
            }
            Disk.write();
        }
