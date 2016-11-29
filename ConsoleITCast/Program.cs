@@ -15,6 +15,11 @@ namespace ConsoleITCast
             computer com = new computer();
             com.Disk = new mp3();
             com.read();
+            Console.WriteLine(com.digui(3));
+            //foreach (var item in com.number())
+            //{
+            //    Console.WriteLine(item);
+            //}
             var m3 = new mp3();
             m3.player();
             object.ReferenceEquals(m3, m3);

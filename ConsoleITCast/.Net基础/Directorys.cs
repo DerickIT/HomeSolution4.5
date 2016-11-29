@@ -15,6 +15,7 @@ namespace ConsoleITCast.Net基础
             Directory.Delete("");//删除操作
             Directory.CreateDirectory("");//创建文件夹
             Directory.GetDirectories("");//返回路径中所有的文件路径
+            //directory没有copy方法只有（剪切）move方法
         }
     }
 }
