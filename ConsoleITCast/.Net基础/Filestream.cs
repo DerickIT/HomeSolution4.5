@@ -14,8 +14,11 @@ namespace ConsoleITCast.Net基础
         /// </summary>
         public void test()
         {
+            /*
+             创建缓冲区存储读取的内容
+             */
             FileStream fs = new FileStream("", FileMode.Open);
-            byte[] bytes = new byte[fs.Length];
+            byte[] bytes = new byte[fs.Length];//缓冲区
             int r = fs.Read(bytes, 0, bytes.Length);
             fs.Close();
             fs.Dispose();
