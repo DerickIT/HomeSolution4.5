@@ -45,6 +45,8 @@
     <Compile Include=".Net基础\computer.cs" />
     <Compile Include=".Net基础\Directorys.cs" />
     <Compile Include=".Net基础\Enum.cs" />
+    <Compile Include=".Net基础\Files.cs" />
+    <Compile Include=".Net基础\Filestream.cs" />
     <Compile Include=".Net基础\hashtable.cs" />
     <Compile Include=".Net基础\index[].cs" />
     <Compile Include=".Net基础\mp3.cs" />
