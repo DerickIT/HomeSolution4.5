@@ -35,7 +35,7 @@ namespace ConsoleITCast.Net基础
             }
             fs.Close();
             fs.Dispose();
-            string fas = UTF8Encoding.UTF8.GetString(bytes);
+            string fas = UTF8Encoding.UTF8.GetString(bytes);//通过读取文件的前几个字节来判断文件的编码方式
         }
     }
 }
