@@ -51,6 +51,7 @@
     <Compile Include=".Net基础\index[].cs" />
     <Compile Include=".Net基础\mp3.cs" />
     <Compile Include=".Net基础\neicun.cs" />
+    <Compile Include=".Net基础\Streamreadandwrite.cs" />
     <Compile Include=".Net基础\structs.cs" />
     <Compile Include=".Net基础\upan.cs" />
     <Compile Include="Program.cs" />
