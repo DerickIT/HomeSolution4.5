@@ -12,6 +12,8 @@ namespace ConsoleITCast
     {
         static void Main(string[] args)
         {
+           
+
             computer com = new computer();
             com.Disk = new mp3();
             com.read();

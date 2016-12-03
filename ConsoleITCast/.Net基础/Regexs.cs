@@ -30,12 +30,23 @@ namespace ConsoleITCast.Net基础
 
         public bool test()
         {
-            var vl = "b[jtsu]g";//只能匹配到【】中的内容，就像bug，但不能匹配出brg
+            var vl = "^(b[jtsu]g])$";//只能匹配到【】中的内容，就像bug，但不能匹配出brg
             Regex rg = new Regex("", RegexOptions.IgnoreCase);
             //Regex.IsMatch();判断字符串是否匹配相应的规则
             //Regex.Match()从某个字符串中取出符合规则的字符
             //Regex.Matches()字符串提取，可以提取所有的符合规则的字符串
             //Regex.Replace()字符串替换，把所有匹配正则表达四的字符串替换成相应的字符串
+            Regex.IsMatch("busdkk", vl);//注意优先级
+            //邮政编码
+            var yreg = @"^\d{6}$";//出啊先6次
+            var shenfenzreg = @"^\d{15}$|^\d{18}$";//身份证号，只能是15位或者18位
+            var phonereg = @"^((\d{3,4}\-?\d{7,8})|(\d{5}))$";//验证010-xxxxxxxx，或者83838 02000000223
+            var email = @"^[a-zA-Z0-9_\.]+@[A-Za-z0-9]+(\.[a-zA-Z]+)+$";//验证邮箱
+            var ipreg = @"\d{1,3}{\.\d{1,3}}{\.\d{3}}";//验证ip规则
+            var date = @"^{\d{1,4}\-\d{1,2}\-\d{1,2}$";//验证时间格式
+            var urlreg = @"^[a-zA-Z]+://.+$";//验证url格式
+            var numreg = @"^1[1-9]$";//验证10-20的数字@"^((1[1-9])|2([1-9]))$"
+            Regex.IsMatch("ufj887", yreg);//如果要出现一个字符，这个字符是关键字，需要转义
             return false;
         }
     }
