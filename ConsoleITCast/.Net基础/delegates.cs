@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleITCast.Net基础
 {
+    /*
+     * 委托是个参数类型
+     */
    public class delegates
     {
        public delegate void str(string val);
