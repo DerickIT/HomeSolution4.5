@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include=".Net基础\Class泛型.cs" />
     <Compile Include=".Net基础\computer.cs" />
+    <Compile Include=".Net基础\delegates.cs" />
     <Compile Include=".Net基础\Directorys.cs" />
     <Compile Include=".Net基础\Enum.cs" />
     <Compile Include=".Net基础\Files.cs" />

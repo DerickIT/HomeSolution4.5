@@ -10,10 +10,32 @@ namespace ConsoleITCast
 {
     class Program
     {
+        public void sort(int[] arr)
+        {
+            for (var i = 0; i < arr.Length; i++)
+            {
+                for (var j = 0; j < arr.Length; j++)
+                {
+                     
+                    if (arr[j] > arr[i])
+                    {
+                      var  temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+
+                }
+            }
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+        }
         static void Main(string[] args)
         {
-           
 
+            var ss = new Program();
+            ss.sort(new int[] { 2, 45, 6,62, 1 });
             computer com = new computer();
             com.Disk = new mp3();
             com.read();
@@ -30,13 +52,13 @@ namespace ConsoleITCast
             var bo = num.Equals(sub);
             Fu();
             //foreach其实只是做了这件事
-           //var sd= new  index__ ();
-           //IEnumerator tor = sd.GetEnumerator();
-           //while (tor.MoveNext())
-           //{
-           //    string sds = tor.Current.ToString();
-           //    Console.WriteLine(sds);
-           //}
+            //var sd= new  index__ ();
+            //IEnumerator tor = sd.GetEnumerator();
+            //while (tor.MoveNext())
+            //{
+            //    string sds = tor.Current.ToString();
+            //    Console.WriteLine(sds);
+            //}
         }
         public int add(params int[] arr)
         {
