@@ -12,6 +12,8 @@ namespace ConsoleITCast.Net基础
      * 委托是引用类型，会编译成一个class
      * 通过委托打破了访问修饰符的限制，无论之前是static或者private，只要传入到delegate中就能访问到
      * 访问修饰符是为了变成方便，多态，其实还是可以通过委托，反射访问到
+     * ******
+     * 多播委托中要是有返回值，只会得到最后一个返回结果的方法
      */
     public class delegates
     {
@@ -19,7 +21,7 @@ namespace ConsoleITCast.Net基础
         public  void strs(string a)
         {
            str ss= (string s)=>Console.WriteLine("sd");
-           ss("");
+           ss += (string sc) => Console.WriteLine("sddc"); //多播委托
         }
        
         public void testdelegate(str d)
