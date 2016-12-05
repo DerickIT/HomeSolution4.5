@@ -46,6 +46,7 @@
     <Compile Include=".Net基础\delegates.cs" />
     <Compile Include=".Net基础\Directorys.cs" />
     <Compile Include=".Net基础\Enum.cs" />
+    <Compile Include=".Net基础\Events.cs" />
     <Compile Include=".Net基础\Files.cs" />
     <Compile Include=".Net基础\Filestream.cs" />
     <Compile Include=".Net基础\hashtable.cs" />
