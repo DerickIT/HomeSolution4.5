@@ -24,6 +24,8 @@ namespace ConsoleITCast.Net基础
             Assembly ab = Assembly.LoadFile("");//加载程序集
             ab.GetType();//获取所有类型
             ab.GetExportedTypes();//获取所有的访问修饰符为public 的类型
+          var type=  ab.GetType("");
+          type.GetMethods();//获取程序集中所有方法
         }
     }
 }
