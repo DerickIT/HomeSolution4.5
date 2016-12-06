@@ -19,15 +19,16 @@ namespace ConsoleITCast.Net基础
          * 事件只能使用+=、-=赋值，所以避免了使用=赋值时的覆盖问题
          * 事件只能在定义的类中使用，避免了在外部被“滥用”的危险
          * 事件其实就是一个私有的委托和两个公有的add,remove方法，只能通过+=-=赋值
+         * 可以通过事件传值
          */
-       
- public delegate void methoddelegate(int wd);
+
+        public delegate void methoddelegate(int wd);
         public event methoddelegate methodevent;
         public void guolu()
-        { 
-           
+        {
+
             int shuiwen = 0;
-           
+
             for (int i = 0; i < 100; i++)
             {
                 if (i >= 95 && methodevent != null)
