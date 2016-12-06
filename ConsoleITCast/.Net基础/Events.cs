@@ -20,6 +20,9 @@ namespace ConsoleITCast.Net基础
          * 事件只能在定义的类中使用，避免了在外部被“滥用”的危险
          * 事件其实就是一个私有的委托和两个公有的add,remove方法，只能通过+=-=赋值
          * 可以通过事件传值
+         * ****************************
+         *         委托事件总结
+         *区别：事件是一种特殊委托，委托是个类型
          */
 
         public delegate void methoddelegate(int wd);
