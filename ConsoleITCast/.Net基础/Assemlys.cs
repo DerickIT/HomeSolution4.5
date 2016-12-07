@@ -21,11 +21,13 @@ namespace ConsoleITCast.Net基础
 
         public void test()
         {
+            //description 描述
             Assembly ab = Assembly.LoadFile("");//加载程序集
             ab.GetType();//获取所有类型
             ab.GetExportedTypes();//获取所有的访问修饰符为public 的类型
             var type = ab.GetType("");
             var typec = ab.GetType("");
+            type.IsInstanceOfType(type);//判断是不是当前传过来的那种类型，而不是其他的不对应的对象
             bool a = type.IsAssignableFrom(typec);//表示是否可以吧typec赋值给type，type是否继承typec
 
             type.GetMethods();//获取程序集中所有方法
