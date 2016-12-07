@@ -24,8 +24,16 @@ namespace ConsoleITCast.Net基础
             Assembly ab = Assembly.LoadFile("");//加载程序集
             ab.GetType();//获取所有类型
             ab.GetExportedTypes();//获取所有的访问修饰符为public 的类型
-          var type=  ab.GetType("");
-          type.GetMethods();//获取程序集中所有方法
+            var type = ab.GetType("");
+            var typec = ab.GetType("");
+            bool a = type.IsAssignableFrom(typec);//表示是否可以吧typec赋值给type，type是否继承typec
+
+            type.GetMethods();//获取程序集中所有方法
+            MethodInfo mi = type.GetMethod("方法名");
+            object obj = Activator.CreateInstance(type);//创建要传递的参数类型
+            object objs = Activator.CreateInstance(type);//创建要调用类的实例构造函数
+            mi.Invoke(obj, null);//调用方法
+
         }
     }
 }

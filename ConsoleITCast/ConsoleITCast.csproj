@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include=".Net基础\Assemlys.cs" />
     <Compile Include=".Net基础\Class泛型.cs" />
     <Compile Include=".Net基础\computer.cs" />
     <Compile Include=".Net基础\delegates.cs" />
