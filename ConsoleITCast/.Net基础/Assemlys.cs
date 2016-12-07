@@ -17,6 +17,7 @@ namespace ConsoleITCast.Net基础
          * MSIL代码
          * 读取程序集中的类，字段，成员类型成为反射
          * 
+         * 读取程序集信息，使用插件，读取插件中内容，内容实现了某个接口
          */
 
         public void test()
