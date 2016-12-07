@@ -30,7 +30,7 @@ namespace ConsoleITCast.Net基础
             type.IsInstanceOfType(type);//判断是不是当前传过来的那种类型，而不是其他的不对应的对象
             bool a = type.IsAssignableFrom(typec);//表示是否可以吧typec赋值给type，type是否继承typec   父类验证
             bool n = type.IsSubclassOf(typec);//type是否是tyopec的子类
-            var ss = type.IsAbstract;//获取type类型是否为抽象类
+            var ss = type.IsAbstract;//获取type类型是否为抽象类，只要不能被实例化就认为是抽象的
 
             type.GetMethods();//获取程序集中所有方法
             MethodInfo mi = type.GetMethod("方法名");
