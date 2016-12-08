@@ -41,5 +41,11 @@ namespace ConsoleITCast.Net基础
             mi.Invoke(obj, null);//调用方法
 
         }
+        public void getprivate()
+        {
+            Assembly aly = Assembly.LoadFile("");
+            Type typs = typeof(int);
+            MethodInfo mio = typs.GetMethod("", BindingFlags.NonPublic | BindingFlags.Instance);//表示获取一个私有方法
+        }
     }
 }
