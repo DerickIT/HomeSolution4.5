@@ -47,6 +47,7 @@ namespace ConsoleITCast.Net基础
             Assembly aly = Assembly.LoadFile("");
             Type typs = typeof(int);
             MethodInfo mio = typs.GetMethod("", BindingFlags.NonPublic | BindingFlags.Instance);//表示获取一个私有方法
+            var s = "sdkk".reg();
         }
     }
 }
