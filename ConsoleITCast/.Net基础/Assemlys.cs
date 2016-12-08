@@ -43,6 +43,7 @@ namespace ConsoleITCast.Net基础
         }
         public void getprivate()
         {
+            var niming = new { name = "zhn", age = 18, sex = true };//匿名类型，只读私有
             Assembly aly = Assembly.LoadFile("");
             Type typs = typeof(int);
             MethodInfo mio = typs.GetMethod("", BindingFlags.NonPublic | BindingFlags.Instance);//表示获取一个私有方法
