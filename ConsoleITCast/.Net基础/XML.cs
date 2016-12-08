@@ -20,6 +20,7 @@ namespace ConsoleITCast.Net基础
         public void xmltest()
         {
             XElement xl = new XElement("");
+            xl.Add("");
         }
     }
 }
