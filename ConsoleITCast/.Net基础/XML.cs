@@ -9,6 +9,7 @@ namespace ConsoleITCast.Net基础
 {
     public class XML
     {
+        public int age { get; set; }
         /*
          * XML与HTML的区别：
          * xml元素必须关闭
@@ -26,7 +27,22 @@ namespace ConsoleITCast.Net基础
             var xls = xd.Root;//获取根节点
 
         }
-        void Diguixml(XElement xl,string ss)
+        void write()
+        {
+            XDocument xd = new XDocument();//创建一个xml对象
+            XElement xle = new XElement("根节点");//创建一个根节点
+            xd.Add(xle);//将节点添加到文档
+
+            //为文档添加属性
+            XAttribute attr = new XAttribute("url", "www.baidu.com");//采用键值对形式添加xml元素属性
+            xd.Root.Add(attr);//将百度元素属性添加到文档
+            //xd.Root.SetAttributeValue("设置键", "设置值");
+
+            xle.SetAttributeValue("key", "value");
+            xd.Root.Add(xle);
+            xd.Save("存储路径");//存储路径,只有一个元素也可以保存，xelement
+        }
+        void Diguixmlread(XElement xl, string ss)
         {
             // xl.Element
             foreach (var item in xl.Elements())
@@ -34,8 +50,20 @@ namespace ConsoleITCast.Net基础
                 Console.WriteLine(item.Name);
 
                 string ssd = item.Name.ToString();
-                Diguixml(xl, ssd);//使用递归将读取到的xml节点输出
+                Diguixmlread(xl, ssd);//使用递归将读取到的xml节点输出
+                //---------------------
+                item.Attribute("id");//获取id
             }
+        }
+
+        /// <summary>
+        /// 隐式类型转换
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
+        public static implicit operator XML(int a)
+        {
+            return new XML() { age = a };
         }
     }
 }
