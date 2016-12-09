@@ -22,6 +22,20 @@ namespace ConsoleITCast.Net基础
         {
             XElement xl = new XElement("");
             xl.Add("");
+            XDocument xd = XDocument.Load("");//加载路径的xml文件
+            var xls = xd.Root;//获取根节点
+
+        }
+        void Diguixml(XElement xl,string ss)
+        {
+            // xl.Element
+            foreach (var item in xl.Elements())
+            {
+                Console.WriteLine(item.Name);
+
+                string ssd = item.Name.ToString();
+                Diguixml(xl, ssd);//使用递归将读取到的xml节点输出
+            }
         }
     }
 }
