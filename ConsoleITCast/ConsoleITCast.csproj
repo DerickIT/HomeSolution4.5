@@ -55,9 +55,11 @@
     <Compile Include=".Net基础\mp3.cs" />
     <Compile Include=".Net基础\neicun.cs" />
     <Compile Include=".Net基础\Regexs.cs" />
+    <Compile Include=".Net基础\StaticExtend.cs" />
     <Compile Include=".Net基础\Streamreadandwrite.cs" />
     <Compile Include=".Net基础\structs.cs" />
     <Compile Include=".Net基础\upan.cs" />
+    <Compile Include=".Net基础\XML.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

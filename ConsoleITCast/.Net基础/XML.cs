@@ -10,7 +10,7 @@ namespace ConsoleITCast.Net基础
     public class XML
     {
         /*
-         * XML与HTML的却别
+         * XML与HTML的区别：
          * xml元素必须关闭
          * xml中元素的属性值必须用引号
          * xml大小写敏感（casesensitive）
