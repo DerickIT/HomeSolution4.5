@@ -22,9 +22,10 @@ namespace ConsoleITCast.Net基础
         public void xmltest()
         {
             XElement xl = new XElement("");
-            xl.Add("");
+            xl.Add("");//创建节点添加值
             XDocument xd = XDocument.Load("");//加载路径的xml文件
             var xls = xd.Root;//获取根节点
+            xd.Element("读取这个节点内容");
 
         }
         void write()
