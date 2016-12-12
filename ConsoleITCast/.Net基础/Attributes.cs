@@ -13,7 +13,7 @@ namespace ConsoleITCast.Net基础
         [Objeces("人员id")]
         public int ID { get; set; }
     }
-    public class ObjecesAttribute : Attribute
+    public class ObjecesAttribute : Attribute//本身继承attribute没有什么意义，只是相当于做了一个标记，需要实现
     {
         public ObjecesAttribute(string a)
         {
