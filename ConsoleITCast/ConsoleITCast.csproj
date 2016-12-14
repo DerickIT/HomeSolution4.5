@@ -61,6 +61,7 @@
     <Compile Include=".Net基础\structs.cs" />
     <Compile Include=".Net基础\upan.cs" />
     <Compile Include=".Net基础\XML.cs" />
+    <Compile Include=".Net基础\XMLserialize.cs" />
     <Compile Include=".Net基础\X深拷贝与浅复制.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
