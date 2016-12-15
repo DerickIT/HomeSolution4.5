@@ -13,6 +13,9 @@ namespace ConsoleITCast.SQL
          * 唯一约束
          * 主键约束
          * 非空约束
+         * 默认约束
+         * 外键约束
+         * alert table  mytable drop column myid  删除myid列
          * 
          */
     }
