@@ -15,7 +15,10 @@ namespace ConsoleITCast.SQL
          * count
          * sum
          * avg 计算平均分的时候对空值不处理 null
-         * between end
+         * between 18 and 24 在18-24之间
+         * or
+         * in
+         * and
          */
     }
 }
