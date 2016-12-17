@@ -19,6 +19,13 @@ namespace ConsoleITCast.SQL
          * or
          * in
          * and
+         * ------------------------
+         * 通配符
+         * like '%zhn%'
+         * []通配符
+         * like '%[赵钱]%'只要包含赵或者钱就能被查出
+         * like 'x[赵钱]y' 表示 x赵y  x钱y  加^表示除了赵钱以外的x*y
+         * 
          */
     }
 }
