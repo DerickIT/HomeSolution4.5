@@ -46,7 +46,9 @@ namespace ConsoleITCast.SQL
          * having能使用哪列是取决于你分组后结果集有哪列
          * ==============================
          * SQL语句的执行顺序
-         * select from  where groupby having order by
+         * select from | where |groupby| having |order by
+         * 每一步执行之后都是一个结果集
+         * 当group by出结果集出来的时候就可以用order by用select中的别名了
          */
     }
 }
