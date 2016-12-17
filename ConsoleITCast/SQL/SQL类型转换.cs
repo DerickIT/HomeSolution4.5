@@ -39,7 +39,7 @@ namespace ConsoleITCast.SQL
          * left(str,10),从左截取10个长度字符串
          * right(str,10)从右
          * substring（str,2,5）从左边开始截取第2-5个 索引从1开始数
-         * 
+         * replace(str,'a','A')替换
          * 
          */
     }
