@@ -25,6 +25,8 @@ namespace ConsoleITCast.SQL
          * []通配符
          * like '%[赵钱]%'只要包含赵或者钱就能被查出
          * like 'x[赵钱]y' 表示 x赵y  x钱y  加^表示除了赵钱以外的x*y
+         * 在数据库中转义不用\用[]
+         * select * from table where name not like 'zhao%'查询出所有不姓赵的姓名
          * 
          */
     }
