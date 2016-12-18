@@ -43,6 +43,9 @@ namespace ConsoleITCast.SQL
          * 
          * ========================================
          * update table set id=id+9,score=score=10 where t<=95
+         * 使用case  when ...then替代if else
+         * 
+         * trancate table stu 清空表数据
          */
     }
 }
