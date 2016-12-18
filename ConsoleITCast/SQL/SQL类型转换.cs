@@ -41,6 +41,8 @@ namespace ConsoleITCast.SQL
          * substring（str,2,5）从左边开始截取第2-5个 索引从1开始数
          * replace(str,'a','A')替换
          * 
+         * ========================================
+         * update table set id=id+9,score=score=10 where t<=95
          */
     }
 }
