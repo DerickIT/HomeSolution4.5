@@ -37,7 +37,7 @@ namespace ConsoleITCast.SQL
          * 清空连接池的方法
          * conn.clearallpools()  clearpool()
          * 
-         * mvc
+         * 多条件搜索时，where 1=1并不高效
          */
     }
 }
