@@ -32,6 +32,12 @@ namespace ConsoleITCast.SQL
          * 除了ado有连接池，数据库也有一个连接池
          * 如果连接池中有对象，则open的意思是把对象取出来
          * dispose 和 close 在有连接池的情况下其实是假的
+         * 
+         * ======================
+         * 清空连接池的方法
+         * conn.clearallpools()  clearpool()
+         * 
+         * mvc
          */
     }
 }
