@@ -21,6 +21,7 @@ namespace ConsoleITCast.SQL
          * year(getdate())
          * month(getdate())
          * day(getdate())
+         * datepart(year,birthday)=2009
          */
     }
 }
