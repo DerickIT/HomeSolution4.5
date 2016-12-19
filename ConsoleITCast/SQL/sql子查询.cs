@@ -23,7 +23,7 @@ namespace ConsoleITCast.SQL
          * mssql05                 【 增加一个行号                 】
          * select * from ( select  row_number over(order by id desc） as number from table) as t1 where ti.number between 2*5+1 end 3*5 
          * 获取第2页的数据
-         * 
+         * 开窗函数与聚合函数一起使用，可以让聚合函数对每条数据都计算一次
          */
     }
 }
