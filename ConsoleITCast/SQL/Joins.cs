@@ -21,6 +21,9 @@ namespace ConsoleITCast.SQL
          * 
          * 自连接
          * select * from t1 inner join  (select * from t1 where id>10)as tb1 where tb1.id=t1.id
+         * 
+         * 视图是一张虚拟表他表示一张表的部分数据或多张表的综合数据，其结构和数据是建立在对标的查询基础上
+         * 视图在错做上和数据表没有什么区别，但两者的差异是本质不相同，数据表示实际存储记录的地方，然而视图并不保存任何记录
          */
     }
 }
