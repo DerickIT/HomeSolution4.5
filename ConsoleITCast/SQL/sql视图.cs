@@ -15,6 +15,11 @@ namespace ConsoleITCast.SQL
          * 
          * 在视图中不能使用order by 除非另外指定了top或for xml
          * （*）索引视图会存储数据，微软设计的数据库存在的，oracle不会存储
+         * ========================================================
+         * 局部变量
+         * declare  @d int 局部变量
+         * @@name 全局变量
+         * set @变量名=value
          */
     }
 }
