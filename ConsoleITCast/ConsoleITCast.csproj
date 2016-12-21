@@ -69,10 +69,14 @@
     <Compile Include="SQL\Distincts.cs" />
     <Compile Include="SQL\Index索引.cs" />
     <Compile Include="SQL\Joins.cs" />
+    <Compile Include="SQL\SQLifelsewhile.cs" />
     <Compile Include="SQL\sqlreader.cs" />
+    <Compile Include="SQL\sql临时表.cs" />
+    <Compile Include="SQL\SQL事务.cs" />
     <Compile Include="SQL\sql处理null.cs" />
     <Compile Include="SQL\sql子查询.cs" />
     <Compile Include="SQL\SQL类型转换.cs" />
+    <Compile Include="SQL\sql视图.cs" />
     <Compile Include="SQL\UNcocheck.cs" />
   </ItemGroup>
   <ItemGroup>
