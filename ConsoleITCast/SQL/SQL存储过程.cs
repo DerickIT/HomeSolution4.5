@@ -18,6 +18,9 @@ namespace ConsoleITCast.SQL
          * begin
          * ...执行sql语句
          * end
+         * 
+         * 存储过程分页
+         * 传入参数，输出参数
          */
     }
 }
