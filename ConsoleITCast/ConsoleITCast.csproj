@@ -75,6 +75,7 @@
     <Compile Include="SQL\SQL事务.cs" />
     <Compile Include="SQL\sql处理null.cs" />
     <Compile Include="SQL\sql子查询.cs" />
+    <Compile Include="SQL\SQL存储过程.cs" />
     <Compile Include="SQL\SQL类型转换.cs" />
     <Compile Include="SQL\sql视图.cs" />
     <Compile Include="SQL\UNcocheck.cs" />
