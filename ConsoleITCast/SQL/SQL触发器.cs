@@ -29,7 +29,14 @@ namespace ConsoleITCast.SQL
          * begin 把每次删除的记录存到了tb表
          * insert into tb select * from deleted
          * end
+         * 表级触发器  （无论影响多少行值触发一次）
          * 
+         * 
+         * 启动sqlserver代理-打开数据库新建作业-可以自己设置任务去自动触发
+         * 
+         * 
+         * 尽量避免在触发其中执行耗时操作，因为触发器认为sql语句会在一个事务中
+         * 能尽量不用就不用触发器
          */
     }
 }
