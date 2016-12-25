@@ -8,6 +8,10 @@ namespace ConsoleITCast.SQL
 {
     class SQL触发器
     {
+#if false
+       sdfasdf
+        asdf
+#endif
         /*
          * 相当于.net中的事件
          * 自动化操作，减少了手动操作出错的记率
