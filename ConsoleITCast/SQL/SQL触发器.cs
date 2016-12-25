@@ -42,5 +42,32 @@ namespace ConsoleITCast.SQL
          * 尽量避免在触发其中执行耗时操作，因为触发器认为sql语句会在一个事务中
          * 能尽量不用就不用触发器
          */
+
+#if false
+        *游标
+        sql语句是吧结果集作为一个整体或作为一个但原来操作的，但是我们需要猪呢对结果集中的每条记录进行特殊操作，需要用到游标
+        --------
+        游标是过程化思维，而sql本身是几何化思维
+        针对表中的每一行数据内容调用某个存储过程，或者为每个用户的手机发一条短信，
+        多数清华下使用查询的性能要变游标高效，但是游标可以优化
+        ------------
+        declare 游标名 cursor[local|global][优选选项可选]for 查询语句
+        open 游标名
+        fetch [next]from 游标名into@v1 将游标向后移动一条
+        @@fetch_status=0 为移动成功
+        close 游标名
+        deallocate 游标名-删除游标中数据库中保存的数据结构（释放资源）
+
+
+        实例：
+        declare cue_rew cursor fast_forward for select * from table
+        open cur_reward
+        fetch new fromn cur_reward into * ..column
+        wheile @@fetch_status=0
+        执行语句
+        beign
+
+        end
+#endif
     }
 }
