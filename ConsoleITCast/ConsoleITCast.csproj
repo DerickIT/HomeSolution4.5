@@ -78,6 +78,7 @@
     <Compile Include="SQL\SQL存储过程.cs" />
     <Compile Include="SQL\SQL类型转换.cs" />
     <Compile Include="SQL\sql视图.cs" />
+    <Compile Include="SQL\SQL触发器.cs" />
     <Compile Include="SQL\tran事务.cs" />
     <Compile Include="SQL\UNcocheck.cs" />
   </ItemGroup>
