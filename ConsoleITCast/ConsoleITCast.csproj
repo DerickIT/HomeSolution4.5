@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".Net基础\readme.txt" />
+    <Content Include="SQL\readme.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

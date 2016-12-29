@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
+using System.Net;
+using System.Threading;
 namespace ConsoleITCast.ASP.NET
 {
-    class Socket
+    class Sockets
     {
         /*
          * 创建ip
@@ -23,10 +25,33 @@ namespace ConsoleITCast.ASP.NET
          * 
          * 发送：socket  send()
          */
+        public Socket serversocket { get; set; }
 
         public void sdf()
-        { 
-        
+        {
+
+            IPAddress ip = IPAddress.Parse("");
+            IPEndPoint end = new IPEndPoint(ip, int.Parse(""));
+            Socket cc = new Socket(AddressFamily.ImpLink, SocketType.Stream, ProtocolType.Tcp);
+            cc.Bind(end);
+            cc.Listen(20);
+            ThreadPool.QueueUserWorkItem(a =>
+            {
+                Socket so = (Socket)a;
+                while (true)
+                {
+                    var sooc = so.Accept();
+                    ThreadPool.QueueUserWorkItem(s =>
+                    {
+                        Socket soc = (Socket)s;//拿到代理socket
+                        byte[] bytes = new byte[1024 * 1024];
+                        int relength = sooc.Receive(bytes);
+                        string strrequest = Encoding.UTF8.GetString(bytes, 0, relength);
+                        //处理当前的报文，解析当前报文
+                    }, sooc);
+                }
+            }, cc
+            );
         }
     }
 }
