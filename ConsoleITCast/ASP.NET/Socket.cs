@@ -40,13 +40,13 @@ namespace ConsoleITCast.ASP.NET
                 Socket so = (Socket)a;
                 while (true)
                 {
-                    var sooc = so.Accept();
+                    var sooc = so.Accept();//创建socket对象
                     ThreadPool.QueueUserWorkItem(s =>
                     {
                         Socket soc = (Socket)s;//拿到代理socket
                         byte[] bytes = new byte[1024 * 1024];
-                        int relength = sooc.Receive(bytes);
-                        string strrequest = Encoding.UTF8.GetString(bytes, 0, relength);
+                        int relength = sooc.Receive(bytes);//拿到数据大小
+                        string strrequest = Encoding.UTF8.GetString(bytes, 0, relength);//读取数据内容
                         //处理当前的报文，解析当前报文
                     }, sooc);
                 }
