@@ -15,6 +15,8 @@ namespace ConsoleITCast.ASP.NET
       * 创建上下文对象
          * 创建httpapplication对象
          * 利用上下文对象读取到内容
+         * 两个socket客户端通信
+         * Buffer.blockCopy来拷贝传过来的文件
       */
         /// <summary>
         /// 只能处理静态网站
