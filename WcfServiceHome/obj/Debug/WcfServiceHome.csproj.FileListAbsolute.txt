@@ -1,0 +1,6 @@
+E:\DEMO.NET\HomeSolution4.5\WcfServiceHome\bin\Debug\WcfServiceHome.dll.config
+E:\DEMO.NET\HomeSolution4.5\WcfServiceHome\bin\Debug\WcfServiceHome.dll
+E:\DEMO.NET\HomeSolution4.5\WcfServiceHome\bin\Debug\WcfServiceHome.pdb
+E:\DEMO.NET\HomeSolution4.5\WcfServiceHome\obj\Debug\WcfServiceHome.csprojResolveAssemblyReference.cache
+E:\DEMO.NET\HomeSolution4.5\WcfServiceHome\obj\Debug\WcfServiceHome.dll
+E:\DEMO.NET\HomeSolution4.5\WcfServiceHome\obj\Debug\WcfServiceHome.pdb
